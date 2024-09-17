@@ -32,7 +32,7 @@ int main()
     i+j>n-1     -> elements under secondary diagonal 
     if you want elements that are both above main diagonal and above secondary diagonal you combine the two conditions above using &&
     same if you want elements that are both under main diagonal and under secondary diagonal
-    the other options don't make sense, there are no elements above main diagonal and under secondary or under main diagonal and above secondary diagonal
+    same for the other two options, below main and above secondary, or above main, below secondary
     */
     
     
