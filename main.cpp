@@ -1,11 +1,3 @@
-/******************************************************************************
-
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
 #include <iostream>
 
 using namespace std;
@@ -31,17 +23,15 @@ int main()
     i+j<n-1     -> elements above secondary diagonal 
     i+j>n-1     -> elements under secondary diagonal 
     if you want elements that are both above main diagonal and above secondary diagonal you combine the two conditions above using &&
-    same if you want elements that are both under main diagonal and under secondary diagonal
-    same for the other two options, below main and above secondary, or above main, below secondary
+    same if you want elements that are both under main diagonal and under secondary diagonal, or under main and above secondary, or above main and under secondary
     */
     
-    
-    // for example this prints elements that are under main diagonal and under secondary diagonal
+    // this prints out the elements that are above main diagonal and under secondary diagonal (the right 'slice' :) )
     for(int i=0; i<n; i++)
     {
         for(int j=0; j<n; j++)
         {
-          if(i>j && i+j>n-1)
+          if(i<j && i+j>n-1)
             {
                 cout << v[i][j] << " ";
             }
